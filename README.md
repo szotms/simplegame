@@ -365,7 +365,7 @@ a = cat.volume
       <td>
 <pre lang="python">
 def cat_start(self: sg.Sprite):
-    ...    
+    #...    
 cat.add_event(sg.Events.START, cat_start)
 </pre> 
       </td>
@@ -375,7 +375,7 @@ cat.add_event(sg.Events.START, cat_start)
       <td>
 <pre lang="python">
 def my_func(self: sg.Sprite):
-    ...
+    #...
 cat.add_event(sg.Events.SPACE, my_func)
 </pre> 
       </td>
@@ -385,7 +385,7 @@ cat.add_event(sg.Events.SPACE, my_func)
       <td>
 <pre lang="python">
 def my_func(self: sg.Sprite):
-    ...
+    #...
 cat.add_event(sg.Events.MOUSE_LEFT, my_func)
 </pre> 
       </td>
@@ -395,7 +395,7 @@ cat.add_event(sg.Events.MOUSE_LEFT, my_func)
       <td>
 <pre lang="python">
 def my_func(self: sg.Sprite):
-    ...
+    #...
 cat.add_event(sg.Events.BACKDROP_SWITCHES_TO, my_func, 1)
 </pre> 
       </td>
@@ -405,7 +405,7 @@ cat.add_event(sg.Events.BACKDROP_SWITCHES_TO, my_func, 1)
       <td>
 <pre lang="python">
 def my_func(self: sg.Sprite):
-    ...
+    #...
 cat.add_event(sg.Events.RECEIVE_MESSAGE, my_func, "my_msg")
 </pre> 
       </td>
@@ -431,7 +431,7 @@ game.wait(1)
       <td>
 <pre lang="python">
 for i in range(10):
-    ...
+    #...
     game.wait(0.03)
 </pre> 
       </td>
@@ -441,7 +441,7 @@ for i in range(10):
       <td>
 <pre lang="python">
 while True:
-    ...
+    #...
     game.wait(0.03)
 </pre> 
       </td>
@@ -451,7 +451,7 @@ while True:
       <td>
 <pre lang="python">
 if a == 50:
-    ...
+    #...
 </pre> 
       </td>
   </tr>
@@ -460,9 +460,118 @@ if a == 50:
       <td>
 <pre lang="python">
 if a == 50:
-    ...
+    #...
 else:
-    ...
+    #...
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/wait_until.png" /></td>
+      <td>
+<pre lang="python">
+while a != 50:
+    game.wait(0.03)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/repeat_until.png" /></td>
+      <td>
+<pre lang="python">
+while a != 50:
+    #...
+    game.wait(0.03)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/stop_all.png" /></td>
+      <td>
+<pre lang="python">
+game.stop_all()
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/start_as_clone.png" /></td>
+      <td>
+<pre lang="python">
+def my_func(self: sg.Sprite):
+    #...
+clone.add_event(sg.Events.START, my_func)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/create_clone.png" /></td>
+      <td>
+<pre lang="python">
+clone = cat.clone()
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/delete_clone.png" /></td>
+      <td>
+<pre lang="python">
+clone.delete()
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/touching_mouse.png" /></td>
+      <td>
+<pre lang="python">
+cat.is_touching_mouse()
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/touching_edge.png" /></td>
+      <td>
+<pre lang="python">
+cat.is_touching_edge()
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/touching_sprite.png" /></td>
+      <td>
+<pre lang="python">
+cat.is_touching_sprite(sprite)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/touching_color.png" /></td>
+      <td>
+<pre lang="python">
+cat.is_touching_color((0, 0, 0))
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/color_touching_color.png" /></td>
+      <td>
+<pre lang="python">
+game.are_colors_touching((0, 0, 0), (255, 255, 255))
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/distance_to_mouse.png" /></td>
+      <td>
+<pre lang="python">
+cat.get_distance_to_mouse()
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/distance_to_sprite.png" /></td>
+      <td>
+<pre lang="python">
+cat.get_distance_to_sprite(sprite)
 </pre> 
       </td>
   </tr>
