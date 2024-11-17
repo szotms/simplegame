@@ -202,6 +202,269 @@ cat.set_y(0)
 </pre> 
       </td>
   </tr>
-
+ <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/bounce.png" /></td>
+      <td>
+<pre lang="python">
+cat.bounce_if_on_edge(10)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/set_rotation_style.png" /></td>
+      <td>
+<pre lang="python">
+cat.set_rotation_style(sg.RotationStyles.LEFT_RIGHT)
+cat.set_rotation_style(sg.RotationStyles.DONT_ROTATE)
+cat.set_rotation_style(sg.RotationStyles.ALL_AROUND)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/position_xy_dir.png" /></td>
+      <td>
+<pre lang="python">
+a = cat.x
+b = cat.y
+c = cat.direction
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/say_for.png" /></td>
+      <td>
+<pre lang="python">
+cat.say("Hello!")
+game.wait(2)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/say.png" /></td>
+      <td>
+<pre lang="python">
+cat.say("Hello!")
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/switch_costume.png" /></td>
+      <td>
+<pre lang="python">
+cat.set_costume(1)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/next_costume.png" /></td>
+      <td>
+<pre lang="python">
+cat.next_costume()
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/switch_backdrop.png" /></td>
+      <td>
+<pre lang="python">
+game.set_backdrop_idx(1)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/next_backdrop.png" /></td>
+      <td>
+<pre lang="python">
+game.next_backdrop()
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/change_size.png" /></td>
+      <td>
+<pre lang="python">
+cat.change_size(10)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/set_size.png" /></td>
+      <td>
+<pre lang="python">
+cat.set_size(100)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/show.png" /></td>
+      <td>
+<pre lang="python">
+cat.show()
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/hide.png" /></td>
+      <td>
+<pre lang="python">
+cat.hide()
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/z_index.png" /></td>
+      <td>
+<pre lang="python">
+cat.go_forward()
+cat.go_backward()
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/play_until.png" /></td>
+      <td>
+<pre lang="python">
+cat.play_sound_until_done('C:\\Path\\meow.wav')
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/start_sound.png" /></td>
+      <td>
+<pre lang="python">
+cat.play_sound('C:\\Path\\meow.wav')
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/change_volume.png" /></td>
+      <td>
+<pre lang="python">
+cat.change_volume(-10)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/set_volume.png" /></td>
+      <td>
+<pre lang="python">
+cat.set_volume(100)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/get_volume.png" /></td>
+      <td>
+<pre lang="python">
+a = cat.volume
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/start.png" /></td>
+      <td>
+<pre lang="python">
+def cat_start(self: sg.Sprite):
+    ...    
+cat.add_event(sg.Events.START, cat_start)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/key.png" /></td>
+      <td>
+<pre lang="python">
+def my_func(self: sg.Sprite):
+    ...
+cat.add_event(sg.Events.SPACE, my_func)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/sprite_clicked.png" /></td>
+      <td>
+<pre lang="python">
+def my_func(self: sg.Sprite):
+    ...
+cat.add_event(sg.Events.MOUSE_LEFT, my_func)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/backdrop_switches.png" /></td>
+      <td>
+<pre lang="python">
+def my_func(self: sg.Sprite):
+    ...
+cat.add_event(sg.Events.BACKDROP_SWITCHES_TO, my_func, 1)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/receive_message.png" /></td>
+      <td>
+<pre lang="python">
+def my_func(self: sg.Sprite):
+    ...
+cat.add_event(sg.Events.RECEIVE_MESSAGE, my_func, "my_msg")
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/broadcast_message.png" /></td>
+      <td>
+<pre lang="python">
+cat.broadcast_message("my_msg")
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/wait.png" /></td>
+      <td>
+<pre lang="python">
+game.wait(1)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/repeat.png" /></td>
+      <td>
+<pre lang="python">
+for i in range(10):
+    ...
+    game.wait(0.03)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/forever.png" /></td>
+      <td>
+<pre lang="python">
+while True:
+    ...
+    game.wait(0.03)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/if.png" /></td>
+      <td>
+<pre lang="python">
+if a == 50:
+    ...
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/if_else.png" /></td>
+      <td>
+<pre lang="python">
+if a == 50:
+    ...
+else:
+    ...
+</pre> 
+      </td>
+  </tr>
 </table>
 
