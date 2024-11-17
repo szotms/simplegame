@@ -50,41 +50,33 @@ game.run()
   <tr>
       <td><img src="https://github.com/szotms/simplegame/blob/main/images/move.png" /></td>
       <td>
-    
-```python
+<pre lang="python">
 cat.move(10)
-```
-
+</pre>
       </td>
   </tr>
   <tr>
       <td><img src="https://github.com/szotms/simplegame/blob/main/images/turn_right.png" /></td>
       <td>
-
-```python
+<pre lang="python">
 cat.change_direction(15)
-```
-          
+</pre>   
       </td>
   </tr>
   <tr>
       <td><img src="https://github.com/szotms/simplegame/blob/main/images/turn_left.png" /></td>
       <td>
-
-```python
+<pre lang="python">
 cat.change_direction(-15)
-```
-          
+</pre>   
       </td>
   </tr>
   <tr>
       <td><img src="https://github.com/szotms/simplegame/blob/main/images/go_to_random.png" /></td>
       <td>
-
-```python
+<pre lang="python">
 cat.go_to_random()
-```
-          
+</pre> 
       </td>
   </tr>
  
