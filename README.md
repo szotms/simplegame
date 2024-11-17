@@ -20,7 +20,7 @@ cat.add_event(sg.Events.START, cat_start)
 
 game.run()
 ```
-# scratch - simplegame comparision
+# scratch - python comparision
 <img src="https://github.com/szotms/simplegame/blob/main/images/quick_start2.png" />
 <table>
   <tr><th>Scratch</th><th>Python</th></tr>
@@ -47,5 +47,47 @@ game.run()
 ```
 
   </td></tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/move.png" /></td>
+      <td>
+    
+```python
+cat.move(10)
+```
+
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/turn_right.png" /></td>
+      <td>
+
+```python
+cat.change_direction(15)
+```
+          
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/turn_left.png" /></td>
+      <td>
+
+```python
+cat.change_direction(-15)
+```
+          
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/go_to_random.png" /></td>
+      <td>
+
+```python
+cat.go_to_random()
+```
+          
+      </td>
+  </tr>
+ 
+
 </table>
 
