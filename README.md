@@ -575,5 +575,286 @@ cat.get_distance_to_sprite(sprite)
 </pre> 
       </td>
   </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/ask.png" /></td>
+      <td>
+<pre lang="python">
+a = cat.ask("What's your name?")
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/key_pressed.png" /></td>
+      <td>
+<pre lang="python">
+game.is_key_pressed(sg.Keys.SPACE)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/mouse_down.png" /></td>
+      <td>
+<pre lang="python">
+game.is_mouse_down
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/mouse_x.png" /></td>
+      <td>
+<pre lang="python">
+game.mouse_x
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/mouse_y.png" /></td>
+      <td>
+<pre lang="python">
+game.mouse_y
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/set_drag_mode.png" /></td>
+      <td>
+<pre lang="python">
+cat.is_draggable = True
+cat.is_draggable = False
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/timer.png" /></td>
+      <td>
+<pre lang="python">
+game.timer()
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/reset_timer.png" /></td>
+      <td>
+<pre lang="python">
+game.reset_timer()
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/backdrop_of.png" /></td>
+      <td>
+<pre lang="python">
+game.current_backdrop_idx
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/x_position_of.png" /></td>
+      <td>
+<pre lang="python">
+cat.x
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/current_year.png" /></td>
+      <td>
+<pre lang="python">
+import datetime
+today = datetime.date.today()
+year = today.year
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/days_since.png" /></td>
+      <td>
+<pre lang="python">
+from datetime import date
+today = date.today()
+d = date(2000, 1, 1)
+delta = today - d
+print(delta.days)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/plus.png" /></td>
+      <td>
+<pre lang="python">
+a + 2
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/minus.png" /></td>
+      <td>
+<pre lang="python">
+a - 2
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/mul.png" /></td>
+      <td>
+<pre lang="python">
+a * 2
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/div.png" /></td>
+      <td>
+<pre lang="python">
+a / 2
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/random.png" /></td>
+      <td>
+<pre lang="python">
+import random
+random.randint(1, 10)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/greater.png" /></td>
+      <td>
+<pre lang="python">
+a > 50
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/lower.png" /></td>
+      <td>
+<pre lang="python">
+a < 50
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/equals.png" /></td>
+      <td>
+<pre lang="python">
+a == 50
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/and.png" /></td>
+      <td>
+<pre lang="python">
+a > 1 and b > 1
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/or.png" /></td>
+      <td>
+<pre lang="python">
+a > 1 or b > 1
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/not.png" /></td>
+      <td>
+<pre lang="python">
+not a > 1 
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/join.png" /></td>
+      <td>
+<pre lang="python">
+"apple" + "banana"
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/letter_of.png" /></td>
+      <td>
+<pre lang="python">
+"apple"[0]
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/length_of.png" /></td>
+      <td>
+<pre lang="python">
+len("apple")
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/contains.png" /></td>
+      <td>
+<pre lang="python">
+"a" in "apple"
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/mod.png" /></td>
+      <td>
+<pre lang="python">
+a % 2
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/round.png" /></td>
+      <td>
+<pre lang="python">
+round(a)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/abs.png" /></td>
+      <td>
+<pre lang="python">
+abs(a)
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/set_var.png" /></td>
+      <td>
+<pre lang="python">
+a = 0
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/change_var.png" /></td>
+      <td>
+<pre lang="python">
+a += 1
+</pre> 
+      </td>
+  </tr>
+  <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/def.png" /></td>
+      <td>
+<pre lang="python">
+def my_block(steps):
+    cat.move(steps)
+</pre> 
+      </td>
+  </tr>
+    <tr>
+      <td><img src="https://github.com/szotms/simplegame/blob/main/images/my_block.png" /></td>
+      <td>
+<pre lang="python">
+my_block(10)
+</pre> 
+      </td>
+  </tr>
 </table>
 
