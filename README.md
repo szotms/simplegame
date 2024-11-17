@@ -23,7 +23,7 @@ game.run()
 # scratch - simplegame comparision
 <img src="https://github.com/szotms/simplegame/blob/main/images/quick_start2.png" />
 <table>
-  <tr><th>Scratch</th><th>Simplegame</th></tr>
+  <tr><th>Scratch</th><th>Python</th></tr>
   <tr><td><img src="https://github.com/szotms/simplegame/blob/main/images/scratch_coords.png" /></td>
         <td><img src="https://github.com/szotms/simplegame/blob/main/images/python_coords.png" /></td></tr>
     <tr><td><img src="https://github.com/szotms/simplegame/blob/main/images/scratch_dir.png" /></td>
