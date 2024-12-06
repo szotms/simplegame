@@ -4,6 +4,10 @@ Python package for creating simple games.
 ```
 pip install simplegame
 ```
+or
+```
+py -m pip install simplegame
+```
 # quick start
 ```python
 from simplegame import sg
