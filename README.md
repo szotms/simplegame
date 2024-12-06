@@ -21,7 +21,7 @@ cat.add_event(sg.Events.START, cat_start)
 game.run()
 ```
 # scratch - python comparision
-<img src="https://github.com/szotms/simplegame/blob/main/images/quick_start2.png" />
+<img src="https://github.com/szotms/simplegame/blob/main/images/quick_start3.png" />
 <img src="https://github.com/szotms/simplegame/blob/main/images/coords.png" />
 <table>  <tr><th>Scratch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Python</th></tr>
   
